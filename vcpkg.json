@@ -1,0 +1,12 @@
+{
+  "name": "args",
+  "version-string": "0.0.1",
+  "features": {
+    "test": {
+      "description": "Tests for args",
+      "dependencies": [
+        "gtest"
+      ]
+    }
+  }
+}

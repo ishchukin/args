@@ -2,7 +2,6 @@
 
 A header-only command-line arguments parsing library (WIP).
 
-
 ## License
 
 Copyright 2022 Ilya Shchukin
