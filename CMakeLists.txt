@@ -32,7 +32,7 @@ target_include_directories(args INTERFACE
     $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
 )
 
-target_compile_features(args INTERFACE cxx_std_23)
+target_compile_features(args INTERFACE cxx_std_20)
 
 if(ARGS_TEST)
     enable_testing()
