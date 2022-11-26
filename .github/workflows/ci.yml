@@ -17,13 +17,13 @@ jobs:
       security-events: write
     strategy:
       fail-fast: false
-    matrix:
-      os:
-        - ubuntu-22.04
-      compiler:
-        - llvm-15.0.1
-      CMAKE_GENERATOR:
-        - "Ninja Multi-Config"
+      matrix:
+        os:
+          - ubuntu-22.04
+        compiler:
+          - llvm-15.0.1
+        CMAKE_GENERATOR:
+          - "Ninja Multi-Config"
     steps:
       - uses: actions/checkout@v3
 
