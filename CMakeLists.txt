@@ -1,5 +1,5 @@
 # TODO find out the right minimum version
-cmake_minimum_required(VERSION 3.23)
+cmake_minimum_required(VERSION 3.24)
 
 # Determine if the project is built as a subproject (using add_subdirectory)
 # or if it is the master project.
