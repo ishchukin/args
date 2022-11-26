@@ -26,6 +26,8 @@ jobs:
           - "Ninja Multi-Config"
     steps:
       - uses: actions/checkout@v3
+      - with:
+          submodules: recursive
 
       - name: Cache
         uses: actions/cache@v3
