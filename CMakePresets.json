@@ -122,6 +122,16 @@
             }
         }
     ],
+    "buildPresets": [
+        {
+            "name": "dev-x64-win-debug-msvc-vcpkg",
+            "configurePreset": "dev-x64-win-debug-msvc-vcpkg"
+        },
+        {
+            "name": "dev-x64-unixlike-debug-vcpkg",
+            "configurePreset": "dev-x64-unixlike-debug-vcpkg"
+        }
+    ],
     "testPresets": [
         {
             "name": "test-common",
