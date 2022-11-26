@@ -1,8 +1,10 @@
 # args
 
+![CI](https://github.com/ishchukin/args/actions/workflows/ci.yml/badge.svg)
+
 A header-only command-line arguments parsing library (WIP).
 
-## License
+## License & Copyright
 
 Copyright 2022 Ilya Shchukin
 
