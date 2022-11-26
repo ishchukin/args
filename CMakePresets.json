@@ -116,7 +116,10 @@
                 "unixlike",
                 "debug",
                 "vcpkg"
-            ]
+            ],
+            "cacheVariables": {
+                "VCPKG_MANIFEST_FEATURES": "test"
+            }
         }
     ],
     "testPresets": [
