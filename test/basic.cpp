@@ -14,6 +14,4 @@ TEST(ArgsTests, DummyTest) {
     EXPECT_EQ(7 * 6, 42);
 }
 
-TEST(ArgsTests, ArgsTest) {
-    EXPECT_EQ(args::parse_args(2, nullptr), true);
-}
+TEST(ArgsTests, ArgsTest) { EXPECT_EQ(args::parse_args(2, nullptr), true); }
