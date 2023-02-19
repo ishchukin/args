@@ -62,10 +62,10 @@ jobs:
 
       - name: Configure CMake
         run: |
-          cmake  --preset=dev-x64-unixlike-debug-vcpkg
+          cmake  --preset=dev-linux
       - name: Build
         run: |
-          cmake --build --preset=dev-x64-unixlike-debug-vcpkg
+          cmake --build --preset=dev-linux
       - name: Unix - Test and coverage
         run: |
-          ctest --preset=test-dev-x64-unixlike-debug-vcpkg
+          ctest --preset=test-dev-linux
