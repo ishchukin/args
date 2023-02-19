@@ -94,14 +94,29 @@
             }
         },
         {
-            "name": "dev-x64-win-debug-msvc-vcpkg",
+            "name": "flags",
+            "hidden": true,
+            "cacheVariables": {
+                "CMAKE_CXX_FLAGS": "-Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wcast-qual -Wformat=2 -Wundef -Werror=float-equal -Wshadow -Wcast-align -Wunused -Wnull-dereference -Wdouble-promotion -Wimplicit-fallthrough -Wextra-semi -Woverloaded-virtual -Wnon-virtual-dtor -Wold-style-cast"
+            }
+        },
+        {
+            "name": "msvc-flags",
+            "hidden": true,
+            "cacheVariables": {
+                "CMAKE_CXX_FLAGS": "/utf-8 /w14165 /w44242 /w44254 /w44263 /w34265 /w34287 /w44296 /w44365 /w44388 /w44464 /w14545 /w14546 /w14547 /w14549 /w14555 /w34619 /w34640 /w24826 /w14928 /w45038 /W4 /permissive- /volatile:iso /Zc:preprocessor /Zc:__cplusplus /Zc:externConstexpr /Zc:throwingNew /EHsc"
+            }
+        },
+        {
+            "name": "dev-msvc",
             "inherits": [
                 "dev",
                 "x64",
                 "win",
                 "debug",
                 "vcpkg",
-                "msvc"
+                "msvc",
+                "msvc-flags"
             ],
             "cacheVariables": {
                 "VCPKG_TARGET_TRIPLET": "x64-windows-static-md",
@@ -109,7 +124,7 @@
             }
         },
         {
-            "name": "dev-x64-unixlike-debug-vcpkg",
+            "name": "dev-linux",
             "inherits": [
                 "dev",
                 "x64",
@@ -124,12 +139,12 @@
     ],
     "buildPresets": [
         {
-            "name": "dev-x64-win-debug-msvc-vcpkg",
-            "configurePreset": "dev-x64-win-debug-msvc-vcpkg"
+            "name": "dev-msvc",
+            "configurePreset": "dev-msvc"
         },
         {
-            "name": "dev-x64-unixlike-debug-vcpkg",
-            "configurePreset": "dev-x64-unixlike-debug-vcpkg"
+            "name": "dev-linux",
+            "configurePreset": "dev-linux"
         }
     ],
     "testPresets": [
@@ -144,18 +159,18 @@
             }
         },
         {
-            "name": "test-dev-x64-win-debug-msvc-vcpkg",
+            "name": "test-dev-msvc",
             "inherits": [
                 "test-common"
             ],
-            "configurePreset": "dev-x64-win-debug-msvc-vcpkg"
+            "configurePreset": "dev-msvc"
         },
         {
-            "name": "test-dev-x64-unixlike-debug-vcpkg",
+            "name": "test-dev-linux",
             "inherits": [
                 "test-common"
             ],
-            "configurePreset": "dev-x64-unixlike-debug-vcpkg"
+            "configurePreset": "dev-linux"
         }
     ]
 }
